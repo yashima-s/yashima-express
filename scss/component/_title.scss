@@ -1,0 +1,25 @@
+.c-title--primary {
+    font-size: 1.4rem;
+    position: relative;
+    span {
+        padding-right: 3em;
+        background-color: #fff;
+    }
+    &:before {
+        content: "";
+        background-color: $gray-200;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 0.5em;
+        z-index: -1;
+    }
+}
+.c-title--secondary {
+    text-align: center;
+    span {
+        padding: 0 0.5em;
+        padding-bottom: 0.3em;
+        border-bottom: 6px solid;
+    }
+}

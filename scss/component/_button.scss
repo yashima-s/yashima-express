@@ -1,0 +1,31 @@
+.btn-primary {
+    background: $primary;
+    box-shadow: none;
+    border-radius: 200px;
+    &:hover {
+        background: darken($primary, 10);
+    }
+}
+.btn-secondary {
+    background: $secondary;
+    box-shadow: none;
+    border-radius: 200px;
+    &:hover {
+        background: darken($secondary, 10);
+    }
+}
+.c-button--arrow {
+    padding-right: 4em;
+    padding-left: 4em;
+    position: relative;
+    i {
+        position: absolute;
+        left: 0.4em;
+        font-size: 1.4em;
+        line-height: 1.1;
+    }
+}
+.c-button--basic {
+    padding: 0.6em 1em;
+    border: 1px solid $border;
+}

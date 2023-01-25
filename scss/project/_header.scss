@@ -1,0 +1,143 @@
+.p-header {
+    background: url('../img/common/header_bg.jpg') no-repeat bottom;
+    background-size: cover;
+    padding: 1.2rem 0;
+    position: relative;
+    box-shadow: 3px 3px 13px -6px rgba(0,0,0, .42);
+    h1 {
+        margin-bottom: 0;
+        img {
+            vertical-align: bottom;
+            width: 120px;
+        }
+    }
+    
+}
+.p-header__search {
+    input {
+        padding-left: 50px;
+    }
+    .form-control {
+        border-radius: 200px !important;
+    }
+    .btn {
+        position: absolute;
+        z-index: 4;
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        top: 5px;
+        left: 10px;
+    }
+}
+.p-header__user_name {
+    font-size: .8rem;
+}
+.p-header__info {
+    .btn {
+        letter-spacing: .05em;
+        i {
+            margin-right: .5em;
+        }
+    }
+}
+.p-header__menu {
+    font-size: 1.8rem;
+    i {
+        //color: $gray-800;
+    }
+    .btn {
+        margin-bottom: 0.4em;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+.p-header__nav {
+    overflow-x: clip;
+    background: #fff;
+    padding: 0.5em 2em;
+    z-index: 2;
+    position: relative;
+    .row {
+        margin: 0;
+    }
+    .col {
+        padding: 0;
+    }
+    span {
+        display: block;
+        // width: 91px;
+        // height: 75px;
+        padding: 0 8px;
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .nav-link {
+        padding: 0;
+    }
+    img {
+        width: 75px;
+        margin: auto;
+    }
+    .dropdown-menu {
+        top: calc(100% - 6px);
+        margin-top:0;
+        min-width: 16rem;
+        >li {
+            position: relative;
+            &:hover .sub-menu{
+                display: block;
+            }
+        }
+        h4 {
+            margin: 0.5em;
+            border-left: 6px solid;
+            padding-left: 0.4em;
+            font-size: 1.2rem;
+        }
+    }
+    .nav-item:hover .dropdown-menu{ display: block; }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .sub-menu {
+        position: absolute;
+        display: none;
+        left: 100%;
+        top: -.5em;
+        min-width: 11em;
+        list-style: none;
+        padding: 0.5rem 0;
+        border-radius: 0.4rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .18);
+        li {
+            padding: .3em 1.5em;
+            a {
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: darken($light, 20);
+            }
+        }
+    }
+}
+.p-header__nav__inner {
+    > div {
+        overflow: visible;
+    }
+}
+.p-header__notice {
+    position: relative;
+    &:before {
+        content: "";
+        background: $gradient;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 0;
+        display: block;
+        position: absolute;
+    }
+}

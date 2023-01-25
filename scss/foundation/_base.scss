@@ -1,0 +1,14 @@
+html {
+    /* ルート要素の文字サイズを変更する */
+    font-size: 14px;
+} 
+.form-control {
+    height: calc(1.5em + 0.75rem + 6px);
+}
+button {
+    border: 0;
+    background: none;
+}
+iframe {
+    max-width: 100%;
+}

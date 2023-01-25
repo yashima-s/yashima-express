@@ -1,0 +1,23 @@
+.p-contact {
+    background-color: #fff;
+    padding: 40px 60px;
+    .required {
+        &:after {
+            content: "必須";
+            background-color: $danger;
+            color: #fff;
+            padding: 0.1em 0.5em;
+            letter-spacing: 1em;
+            text-indent: 1em;
+            display: inline-block;
+            font-size: 10px;
+            margin-left: 2em;
+            border-radius: 2px;
+        }
+    }
+}
+@include media-breakpoint-down(lg) {
+    .p-contact {
+        padding: 30px 20px;
+    }
+}
