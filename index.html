@@ -1,77 +1,120 @@
+
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="ja">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ログイン | ヤシマエクスプレス</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="RXMIL8zeg2gI0WHZ81ntu7tgrh4uwcdPE7VEHYDl">
 
-    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/> -->
-    <link rel="stylesheet" href="assets/css/starter.css">
-  </head>
-  <body>
-    <main class="p-login">
+    <title>ヤシマエクスプレス　ログイン</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Styles -->
+    <link href="https://yashima-express.com/css/normalize.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/app.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    
+    <link rel="stylesheet" href="https://yashima-express.com/css/fix.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E8ENKPNYC1');
+    </script>
+
+</head>
+<body class="p-top">
+    <!-- Google tag (gtag.js) -->
+
+                <main id="content">
+            <main class="p-login">
         <div class="container">
             <div class="p-login__head row">
                 <div class="col-4 col-md-3 col-lg-4 col-xl-6">
                     <h1>
-                        <a href=""><img src="assets/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
+                        <a href="https://yashima-express.com/login"><img src="https://yashima-express.com/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
                     </h1>
                 </div>
                 <div class="col-8 col-md-9 col-lg-8 col-xl-6 row align-items-center justify-content-end">
                     <div class="col-9 col-md-6 col-lg-5 order-last order-md-first">
                         <ul class="">
-                            <li><a href="#"><small>ご利用規約</small></a></li>
-                            <li><a href="#"><small>サイト利用方法について</small></a></li>
-                            <li><a href="#"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a></li>
+                            <li><a target="_blank" href="https://yashima-express.com/teams_service"><small>ご利用規約</small></a></li>
+                            <li><a href="https://yashima-express.com/files/help.pdf"><small>サイト利用方法について</small></a></li>
+                            <li><a target="_blank" href="https://www.yashima-co.co.jp/ja/index.html"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a></li>
                         </ul>
                     </div>
                     <div class="col-9 col-md-6 col-lg-5 mb-2 mb-md-0">
-                        <a href="#" class="btn btn-primary ">新規登録</a>
+                        <a href="https://yashima-express.com/user/register" class="btn btn-primary ">新規登録</a>
                     </div>
                 </div>
             </div>
             <div class="row p-login__main">
-                <div class="col-12 col-lg-8 col-xl-6">
+                <div class="col-12 col-lg-8 col-xl-8">
                     <h3>ヤシマキザイのチカラ</h3>
-                    <h2>常に一歩前へ</h2>
+                    <h2>つねに、一歩先へ。</h2>
+                    <h3 class="p-login__under">〜Find the future〜</h3>
                     <div>
                         <p class="mb-1">マイページログイン</p>
-                        <div class="row mb-2">
-                            <div class="col-9">
-                                <div class="mb-1">
-                                    <input type="text" class="form-control" placeholder="メールアドレスまたはログインID">
+                        <form action="./sample_index.html" method="">
+                            <input type="hidden" name="_token" value="RXMIL8zeg2gI0WHZ81ntu7tgrh4uwcdPE7VEHYDl">                            <div class="row mb-2">
+                                <div class="col-9">
+                                    <div class="mb-1">
+                                        <input  id="email" type="email" class="form-control " name="email" value="" autofocus placeholder="メールアドレス">
+                                                                            </div>
+                                    <div>
+                                        <input id="password" type="password" class="form-control " name="password" placeholder="パスワード">
+                                                                            </div>
                                 </div>
-                                <div>
-                                    <input type="password" class="form-control" placeholder="パスワード">
+                                <div class="col-3">
+                                    <button type="" class="btn bg-primary" href="./sample_index.html">
+                                        <img src="https://yashima-express.com/img/icons/enter.svg" alt="ENTER">
+                                    </button>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <button class="btn bg-primary" onclick="location.href='./sample_index.html'">
-                                    <img src="assets/img/icons/enter.svg" alt="ENTER"><a href="./sample_index.html"></a>
-                                </button>
-                            </div>
-                        </div>
+                        </form>
                         <div>
                             <small>
                                 <div class="form-check form-check-inline mr-2">
-                                    <input class="form-check-input" type="checkbox" id="remember_me" value="">
-                                    <label class="form-check-label" for="remember_me">ログイン状態を保持する</label>
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" >
+                                    <label class="form-check-label" for="remember">ログイン状態を保持する</label>
                                 </div>
-                                <a href="" class="text-dark u-text_dashed u-va_bottom">パスワードを忘れた方はこちら</a>
+                                <a href="" class="text-dark u-text_dashed u-va_bottom">
+                                                                            <a class="btn btn-link ml-3" href="https://yashima-express.com/password/reset">
+                                            パスワードを忘れた方はこちら
+                                        </a>
+                                                                    </a>
                             </small>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="p-login__footer">
-                <p><small>ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。</small></p>
+                <p><small>ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。当サイトに記載の社名、製品名は各社の商標または登録商品です。</small></p>
                 <div class="text-right"><small>Copyright © YASHIMA & Co., LTD. All Rights Reserved.</small></div>
             </div>
         </div>
     </main>
-    <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
-    <!-- <script type="module" src="assets/js/starter.js"></script> -->
-  </body>
+    </main>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://yashima-express.com/js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://yashima-express.com/js/scripts.js"></script>
+
+    
+    </body>
 </html>
