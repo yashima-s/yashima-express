@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="7bo2z6LX9wMEerO1PBzXdCYkrzR2zSi5kLoiKbkN">
+    <meta name="csrf-token" content="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">
 
-    <title>商品詳細</title>
+    <title>ヤシマエクスプレス　ルーム-YAM</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -18,649 +18,274 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Styles -->
-    <link href="https://dev-yashima.4sis.site/css/normalize.css" rel="stylesheet">
-    <link href="https://dev-yashima.4sis.site/css/app.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/normalize.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/app.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://dev-yashima.4sis.site/css/starter.css">
-    <link rel="stylesheet" href="https://dev-yashima.4sis.site/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
     
-    <link rel="stylesheet" href="https://dev-yashima.4sis.site/css/fix.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/fix.css">
 
-<!-- <link rel='stylesheet' type='text/css' property='stylesheet' href='//dev-yashima.4sis.site/_debugbar/assets/stylesheets?v=1644393152&theme=auto'> -->
-<!-- <script src='//dev-yashima.4sis.site/_debugbar/assets/javascript?v=1644393152'></script> -->
-<script>jQuery.noConflict(true);</script>
-<script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; refStyle.innerHTML = '.phpdebugbar pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }'; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); refStyle = doc.createElement('style'); (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } else if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = '.phpdebugbar pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').substr(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.substr(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump span { display: inline; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { display: inline-block; overflow: visible; text-overflow: ellipsis; max-width: 5em; white-space: nowrap; overflow: hidden; vertical-align: top; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis+.sf-dump-ellipsis { max-width: none; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8ENKPNYC1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E8ENKPNYC1');
+    </script>
+
+    <style>
+        .p-header__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .p-header__nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
+
 </head>
 <body class="p-top">
+    <!-- Google tag (gtag.js) -->
+
                 <main id="content">
-                    <header class="p-header">
-                        <div class="container">
-                            <div class="row align-items-center mb-3">
-                                <div class="col-3 col-xl-2">
-                                    <h1>
-                                        <a href="#"><img src="https://dev-yashima.4sis.site/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
-                                    </h1>
-                                </div>
-                                <div class="col-9 col-xl-6 p-header__search">
-                                    <form method="GET" action="https://dev-yashima.4sis.site/search?class1_unique_cd=&amp;class2_unique_cd=&amp;class3_unique_cd=">
-                                        <div class="input-group">
-                                            <button class="btn btn-secondary" type="submit"><i class="bi bi-search"></i></button>
-                                            <input type="text"
-                           name="search_word"
-                           id="search_word"
-                           class="form-control "
-                           value=""
-                                                placeholder="キーワード／タグ検索"
-                                  >
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-12 col-xl-4 p-header__info">
-                                    <div class="row align-items-center text-right">
-                                        <div class="col-12 col-lg-4 ml-auto col-xl-9">
-                                            <div class="p-header__user_name">
-                                                                                (株)ヤシマキザイ　／　テスト様専用ページ
-                                                                        </div>
-                                        </div>
-                                                <div class="d-none d-xl-block col-xl-3 ">
-                                            <a  href=""
-                                                onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();"
-                                            >
-                                                <img src="https://yashima-express.com/img/icons/logout.svg" alt="ログアウト">
-                                            </a>
-                                            <form id="logout-form" action="https://yashima-express.com/logout" method="POST" style="display: none;">
-                                                <input type="hidden" name="_token" value="te8CbEsBbkzUxVxith7gzz8Fr7S0kLH5LdurTBLk">                        </form>
-                                        </div>
-                                        <div class="col-12 col-lg-6 col-xl-12 p-header__menu">
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="bi bi-suit-heart-fill"></i>お気に入りリスト</a>
-                                            <a href="#" class="btn btn-primary btn-sm mr-2"><i class="bi bi-clipboard-check-fill"></i>お見積りリスト</a>
-                                            <a href="#"><i class="bi bi-person-circle"></i></a>
-                                            <span class="dropdown">
-                                                <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-list"></i></a>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="">アカウント</a></li>
-                                                    <li><a class="dropdown-item" href="">パスワード変更</a></li>
-                                                    <li><a class="dropdown-item" href="">お気に入り一覧</a></li>
-                                                    <li><a class="dropdown-item" href="">見積りリスト</a></li>
-                                                    <li><a class="dropdown-item" href="">総合問い合わせ</a></li>
-                                                    <li><a class="dropdown-item" href="">ご利用規約</a></li>
-                                                    <li><a class="dropdown-item" target="_blank" href="">サイト利用方法</a></li>
-                                                    <li><a class="dropdown-item" target="_blank" href="">ヤシマキザイ</a></li>
-                                                    <li>
-                                                        <a  class="dropdown-item"
-                                                            href=""
-                                                            onclick="event.preventDefault();
-                                                            document.getElementById('logout-form').submit();"
-                                                        >
-                                                            ログアウト
-                                                            <form id="logout-form" action="https://yashima-express.com/logout" method="POST" style="display: none;">
-                                                                <input type="hidden" name="_token" value="te8CbEsBbkzUxVxith7gzz8Fr7S0kLH5LdurTBLk">                                        </form>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <nav class="p-header__nav">
-                                <div class="p-header__nav__inner js-header_nav slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" aria-disabled="false" style="">Previous</button>
-                                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1728px; transform: translate3d(-96px, 0px, 0px);"><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/1.svg" alt="PICK UP">
-                                            </a>
-                                        </div>
-                                    </div><div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                        <div class="nav-item dropdown">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/2.svg" alt="セール商品">
-                                            </a>
-                                        </div>
-                                    </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/11.svg" alt="鉄道車両関連機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>鉄道車両関連機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">内燃用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">内燃用品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＤＨＭ－１７（Ｙ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＴＣ－２（Ｙ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＤＷ－４</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＤＭＦ－３１Ｓ（Ｙ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＤＳ（Ｙ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＤＭＬ－６１Ｚ（Ｙ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電装品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">暖房機</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ピストンリング</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">電気用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電気機器－日立水戸</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電気機器－他日立</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">計器－東洋計器</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">速度発電機－ＳＦＴ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電源－トアック</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">車体用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">車体部品－ＨＩＫ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ゴム部品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">空気圧機器ＴＡＩＹＯ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">締結部品－ＮＬＪ</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">空調用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">その他車両用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">車両部品</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">新規拡販用品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">新規拡販用品</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">作業</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">鉄道電気関係</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">設備関係</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">その他</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="#" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/12.svg" alt="鉄道設備機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>鉄道設備機器</h4></l
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="">保線設備</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">保線機器</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">工場設備</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">教習・訓練装置</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">鉄道施設設備</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">清掃機器</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">作業</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">作業</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">工場設備関係</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/13.svg" alt="発変電機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>発変電機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">火力</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">水力</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">工事</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">変電</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">工事</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/21.svg" alt="一般情報機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>一般情報機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">変電</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">一般情報機器</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">端末</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">端末</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">端末</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">周辺機器</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">周辺機器</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">修理</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">修理</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">その他</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/22.svg" alt="制御情報機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>制御情報機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">サーバー</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">サーバー</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">工事</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">工事</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">部品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">鉄道用制御システム</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">鉄道用制御システムハード</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">鉄道用制御システム</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">鉄道用制御システムソフトウェア</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">鉄道用制御システム</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">鉄道用制御システム工事</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">鉄道用制御システム</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/23.svg" alt="通信機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>通信機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">列車無線工事</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">列車無線工事</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">その他</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="8" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/29.svg" alt="その他">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>その他</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">その他</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="9" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/31.svg" alt="電子部品">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>電子部品</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">電子部品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電子部品</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">コネクター</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＰＳ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＩＬ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＭＩ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＲＤ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＤＳＣ／Ｔ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＭＪ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－ＴＬ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＳＴ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＳＴ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＹＭＩ</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＨＡＲＴ</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">スイッチ</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－単体スイッチ</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">リレー</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－リレー</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">光</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－光コネクタ</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">ハーネス</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ハーネス</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">受動部品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">受動部品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">日立－機能部品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">日立－その他</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">変換部品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">日立－プリント板</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="10" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/32.svg" alt="電子機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>電子機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">変換部品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">航機製品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－システム単品</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">航機製品</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">航機製品</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">ＪＡＥ－システム単品</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide slick-active" data-slick-index="11" aria-hidden="false" style="width: 96px;" tabindex="0">
-                                            <a class="nav-link" href="" tabindex="0">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/33.svg" alt="電子デバイス">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>電子デバイス</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">電子デバイス</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">電子デバイス</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">半導体素子</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">日立－サーミスタ</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">液晶デバイス</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">液晶デバイス</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="0">集積回路</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="0">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="12" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/34.svg" alt="電源装置">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>電源装置</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">スイッチング電源</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">スイッチング電源</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="13" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="./ヤシマキザイTOP画面_files/39.svg" alt="その他電子部品">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>その他電子部品</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">その他</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="14" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/41.svg" alt="産業機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>産業機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">消臭・洗浄・表面処理消臭剤</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">洗浄剤</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="15" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/42.svg" alt="産業設備機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>産業設備機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">設備機器</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">その他</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="16" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="https://dev-yashima.4sis.site/img/icons/nav/43.svg" alt="設備以外">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>設備以外</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">その他（外国）</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">合板部品（ＫＤＣ）</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">砂糖プロジェクト</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">変圧器関連</a></li>
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">日立車両部品（電気）</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div><div class="nav-item dropdown slick-slide" data-slick-index="17" aria-hidden="true" style="width: 96px;" tabindex="-1">
-                                            <a class="nav-link" href="" tabindex="-1">
-                                                <img src="./ヤシマキザイTOP画面_files/44.svg" alt="自動車機器">
-                                            </a>
-                                            <ul class="dropdown-menu text-light bg-dark">
-                                                <li class="text-light"><h4>自動車機器</h4></li>
-                                                                                <li>
-                                                        <a class="dropdown-item text-light" href="" tabindex="-1">自動車部品（三友）</a>
-                                                        <ul class="sub-menu text-dark bg-light">
-                                                                                                        <li class="text-dark"><a href="" tabindex="-1">グリス</a></li>
-                                                                                                </ul>
-                                                    </li>
-                                                                        </ul>
-                                        </div></div></div>     
-                                                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button></div>
-                            </nav>
-                        </div>
-                    </header>
+            <header class="p-header">
+    <div class="container">
+        <div class="row ">
+            <div class="col-3 col-xl-2">
+                <h1>
+                    <a href="./sample_index.html"><img src="https://yashima-express.com/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
+                </h1>
+            </div>
+
+            <div class="col-9 col-xl-6 p-header__search">
+                <form>
+                    <div class="input-group">
+                        <button class="btn btn-secondary" type=""><i class="bi bi-search"></i></button>
+                        <input type="text"
+       name="search_word"
+       id="search_word"
+       class="form-control "
+       value=""
+                            placeholder="キーワード／タグ検索"
+              >
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-xl-4 p-header__info">
+                <div class="row align-items-center text-right">
+                    <div class="col-12 col-lg-4 ml-auto col-xl-9">
+                        <div class="p-header__user_name">
+                                                            (株)ヤシマキザイ　／　テスト様専用ページ
+                                                    </div>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-3 ">
+                        <a  href="./sample_index.html"
+                        >
+                            <img src="https://yashima-express.com/img/icons/logout.svg" alt="ログアウト">
+                        </a>
+                        <form id="logout-form"  method="" style="display: none;">
+                            <input type="hidden" name="_token" value="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-12 p-header__menu">
+                        <a href="" class="btn btn-primary btn-sm"><i class="bi bi-suit-heart-fill"></i>お気に入りリスト</a>
+                        <a href="" class="btn btn-primary btn-sm mr-2"><i class="bi bi-clipboard-check-fill"></i>お見積りリスト</a>
+                        <a href=""><i class="bi bi-person-circle"></i></a>
+                        <span class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-list"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinks">
+                                <li><a class="dropdown-item" href="">アカウント</a></li>
+                                <li><a class="dropdown-item" href="">パスワード変更</a></li>
+                                <li><a class="dropdown-item" href="">お気に入り一覧</a></li>
+                                <li><a class="dropdown-item" href="">見積りリスト</a></li>
+                                <li><a class="dropdown-item" href="">総合問い合わせ</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">ご利用規約</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">サイト利用方法</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">ヤシマキザイ</a></li>
+                                <li>
+                                    <a  class="dropdown-item"
+                                        href="https://yashima-express.com/logout"
+                                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"
+                                    >
+                                        ログアウト
+                                        <form id="logout-form" action="https://yashima-express.com/logout" method="POST" style="display: none;">
+                                            <input type="hidden" name="_token" value="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="p-header__nav">
+    <div class="p-header__nav__inner js-header_nav">
+        <div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/1.svg" alt="PICK UP">
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/2.svg" alt="セール商品">
+                </a>
+            </div>
+        </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/3.svg" alt="道路・設備保全">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/4.svg" alt="安全対策">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/5.svg" alt="環境対策">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/6.svg" alt="副資材">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/7.svg" alt="デジタルソリューション">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/8.svg" alt="その他">
+                </a>
+            </div>
+            </div>
+</nav>
+<div class="p-header__nav p-header__nav--sub"></div>
+
+    </div>
+</header>
     <div class="container my-2">
         <nav class="c-breadcrumb">
             <ol>
                 <li><a href="">トップ</a></li>
-                <li><a href="">鉄道車両関連機器</a></li>
-                <li><a href="">空調用品</a></li>
-                <li><a href="">その他</a></li>
-                <li class="active" aria-current="page"><a href="">山岸 くみ子ホース</a></li>
+                <li class="active" aria-current="page">
+                    <a href="">
+                安全対策
+            </a>
+            ・                    <a href="">
+                環境対策
+            </a>
+                        </li>
+                <li class="active" aria-current="page"><a href="">ルーム-YAM</a></li>
             </ol>
         </nav>
 
-        <div class="row justify-content-between mb-3">
-            <div class="col-12 col-md-6">
-                <h2>ルーム-YAM</h2>
-            </div>
-            <div class="col-12 col-md-6 text-right">
-                                    <button type="button" class="favorite" data-favorite_id="51"><i class="bi bi-suit-heart mr-1"></i>お気に入りに追加</button>
-                                                    <button type="button" class="estimate" data-estimate_id="51"><i class="bi bi-clipboard-check mr-1"></i>お見積りリストに追加</button>
-                            </div>
+        <div class="container my-2">
+    <div class="row justify-content-between mb-3">
+        <div class="col-12 col-md-6">
+            <h2>
+                ルーム-YAM
+                            </h2>
         </div>
-        <div class="row justify-content-between">
-            <div class="col-12 col-md-5 mb-3">
-                <div class="p-product-single__image">
-                    <div class="main js-product_images">
-                        <div class="item">
-                            <img src="https://dev-yashima.4sis.site/storage/itemimage/YI5TKEUB9oahjy5ilDfCcmBS8NgofIHPfMaialpCHuYihYIhj9.png">
-                        </div>
-                                            </div>
-                    <div class="sub js-product_images__nav">
-                        <div class="item">
-                            <img src="https://dev-yashima.4sis.site/storage/itemimage/YI5TKEUB9oahjy5ilDfCcmBS8NgofIHPfMaialpCHuYihYIhj9.png">
-                        </div>
-                                            </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <p class="mb-5">抗菌・抗ウイルスコーティング剤『ルームｰYAM』のご紹介。<br />
-                    <br />
-                    鉄道車両施工実績3000両以上！<br />
-                    広い範囲から細かい部分まで使用できる抗菌・抗ウイルスコーティング剤<br />
-                    <br />
-                    当社では、ナノサイズの銀+チタンの複合材により、明暗所関係なく抗菌作用が発揮される「YAM技術」を応用した抗菌・抗ウイルスコーティング剤『YAMシリーズ』を取り扱っております。<br />
-                    <br />
-                    接触の多い細かい部分まで広い範囲に使用可能。対象場所の面積や部位に合わせて製品を使い分けることで、より効率的に菌・ウイルス対策ができます。<br />
-                    <br />
-                    また、コーティングの効果は１回で２年持続し、暗所でも効果があるため、鉄道車両内や室内にも抗菌・抗ウイルス効果が得られます。<br />
-                    <br />
-                    当社では、製品のみの販売と施工請負のどちらも可能ですので、ご要望の際は、お気軽にご相談ください。<br />
-                    <br />
-                    鉄道車両の他、ホテル、商業施設、大規模商業施設、学校、会議室など実績多数。<br />
-                    <br />
-                    【対象部位】<br />
-                    車両内及び室内のつり革やシート等、椅子やテーブル、及び照明スイッチ等の比較的小面積の対象物<br />
-                    <br />
-                    【施工方法】<br />
-                    エアゾール缶による吹き付け<br />
-                    <br />
-                    【使用目安】<br />
-                    　車両：１両あたり約４缶<br />
-                    　室内：約24畳分/缶（420㎖）<br />
-                    <br />
-                    【特徴】<br />
-                    ■広い範囲に使用可能　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■長期持続タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■簡単施工<br />
-                    ■安心安全なオールインワン製品                                                                                                                                               ■抗菌・抗ウイルス SIAA認証取得済み<br />
-                    <br />
-                    <br />
-                    ※詳しくはカタログをダウンロードして頂くか、お気軽にお問い合わせください。</p>
-                <div class="row row-cols-1 row-cols-md-2 mb-4">
-                    <div class="col mb-3">
-                        <div class="mb-3">
-                            <p>(株)ヤシマキザイ</p>
-                            <p>型式：420ml</p>
-                            <p>価格：6,000円</p>
-                            <p>納期：都度見積もり</p>
-                        </div>
-                        <div>
-                                                    </div>
+        <div class="col-12 col-md-6 text-right">
+                            <button type="button" class="favorite" id="favorite6" data-favorite_id="6"><i class="bi bi-suit-heart-fill" data-toggle="tooltip" title="お気に入り登録リストに追加"></i></button>
+    <button type="button" class="estimate" data-estimate_id="6"><i class="bi bi-clipboard-check-fill" data-toggle="tooltip" title="見積り依頼リストに追加"></i></button>
                     </div>
-                                            <div class="col">
-                            <iframe width="360" height="180" src="https://www.youtube.com/embed/https://www.youtube.com/embed/7lPRbuVnYj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    
-                </div>
-                <div>
-                    <a href="" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>商品へのお問い合わせはこちら（メールフォームへ）</a>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-12 col-md-5 mb-3">
+            <div class="p-product-single__image">
+                <div class="main js-product_images">
+                    <div class="item">
+                        <img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png">
+                    </div>
+                                    </div>
+                <div class="sub js-product_images__nav">
+                    <div class="item">
+                        <img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png">
+                    </div>
+                                    </div>
+            </div>
+            <div class="main mt-3">
+                <iframe width="420" height="180" src="https://www.youtube.com/embed/https://www.youtube.com/embed/7lPRbuVnYj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+                    </div>
+        <div class="col-12 col-md-6">
+            <p class="mb-5">抗菌・抗ウイルスコーティング剤『ルームｰYAM』のご紹介。<br />
+<br />
+鉄道車両施工実績3000両以上！<br />
+広い範囲から細かい部分まで使用できる抗菌・抗ウイルスコーティング剤<br />
+<br />
+当社では、ナノサイズの銀+チタンの複合材により、明暗所関係なく抗菌作用が発揮される「YAM技術」を応用した抗菌・抗ウイルスコーティング剤『YAMシリーズ』を取り扱っております。<br />
+<br />
+接触の多い細かい部分まで広い範囲に使用可能。対象場所の面積や部位に合わせて製品を使い分けることで、より効率的に菌・ウイルス対策ができます。<br />
+<br />
+また、コーティングの効果は１回で２年持続し、暗所でも効果があるため、鉄道車両内や室内にも抗菌・抗ウイルス効果が得られます。<br />
+<br />
+当社では、製品のみの販売と施工請負のどちらも可能ですので、ご要望の際は、お気軽にご相談ください。<br />
+<br />
+鉄道車両の他、ホテル、商業施設、大規模商業施設、学校、会議室など実績多数。<br />
+<br />
+【対象部位】<br />
+車両内及び室内のつり革やシート等、椅子やテーブル、及び照明スイッチ等の比較的小面積の対象物<br />
+<br />
+【施工方法】<br />
+エアゾール缶による吹き付け<br />
+<br />
+【使用目安】<br />
+　車両：１両あたり約４缶<br />
+　室内：約24畳分/缶（420ml）<br />
+<br />
+【特徴】<br />
+■広い範囲に使用可能　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■長期持続タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■簡単施工<br />
+■安心安全なオールインワン製品                                                                                                                                               ■抗菌・抗ウイルス SIAA認証取得済み<br />
+<br />
+<br />
+※詳しくはカタログをダウンロードして頂くか、お気軽にお問い合わせください。</p>
+            <div class="row row-cols-1 row-cols-md-2 mb-4">
+                <div class="col mb-3">
+                    <div class="mb-3">
+                                                    <p>メーカー名：(株)ヤシマキザイ</p>
+                                                <p>型式：420ml</p>
+                        <p>価格：6,000円</p>
+                        <p>納期：都度見積もり</p>
+                                                                            <p>タグ：
+                                <small>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#コーティング</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#抗ウイルス</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#抗菌</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#新型コロナウイルス</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#除菌</span>
+                                                                    </small>
+                            </p>
+                                            </div>
+                    <div>
+                                                    <a href="" class="c-button--basic">カタログはこちら<i class="bi bi-download mr-1"></i></a>
+                                            </div>
                 </div>
             </div>
+
+            <div>
+                <a href="" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>商品へのお問い合わせはこちら（メールフォームへ）</a>
+            </div>
         </div>
+    </div>
+</div>
     </div>
     </main>
 
@@ -668,13 +293,13 @@
     <div class="container">
         <h4 class="c-title--secondary mb-4"><span>ご利用の流れ</span></h4>
         <div class="c-segment--small p-home__flow row row-cols-4 mb-4">
-            <div class="col"><img src="https://dev-yashima.4sis.site/img/home/flow_1.svg" alt="商品検索"></div>
-            <div class="col"><img src="https://dev-yashima.4sis.site/img/home/flow_2.svg" alt="お見積り"></div>
-            <div class="col"><img src="https://dev-yashima.4sis.site/img/home/flow_3.svg" alt="お問合せ"></div>
-            <div class="col"><img src="https://dev-yashima.4sis.site/img/home/flow_4.svg" alt="対応・納品"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_1.svg" alt="商品検索"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_3.svg" alt="お問合せ"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_2.svg" alt="お見積り"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_4.svg" alt="対応・納品"></div>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>詳しくはこちら</a>
+            <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>詳しくはこちら</a>
         </div>
     </div>
 </div>
@@ -683,17 +308,17 @@
     <div class="container">
         <div class="c-segment--small">
             <div class="p-footer__logo text-center mb-4">
-                <a href="#"><img src="https://dev-yashima.4sis.site/img/common/logo_white.svg" alt="ヤシマエクスプレス"></a>
+                <a href="#"><img src="https://yashima-express.com/img/common/logo_white.svg" alt="ヤシマエクスプレス"></a>
             </div>
             <p class="mb-4">ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。</p>
             <div class="row row-cols-4 text-center mb-4">
-                <a href="" class="col text-white"><small>ご利用規約</small></a>
-                <a target="_blank" href="" class="col text-white"><small>サイト利用方法について</small></a>
+                <a target="_blank" href="https://yashima-express.com/teams_service" class="col text-white"><small>ご利用規約</small></a>
+                <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="col text-white"><small>サイト利用方法について</small></a>
                 <a href="" class="col text-white"><small>総合問い合せはこちら</small></a>
-                <a target="_blank" href="" class="col text-white"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a>
+                <a target="_blank" href="https://www.yashima-co.co.jp/ja/index.html" class="col text-white"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a>
             </div>
             <div class="text-center mb-5">
-                <a href="#" class="js-to_top"><img src="https://dev-yashima.4sis.site/img/icons/to_top.svg" alt="PAGE TOP"></a>
+                <a href="#" class="js-to_top"><img src="https://yashima-express.com/img/icons/to_top.svg" alt="PAGE TOP"></a>
             </div>
             <div class="text-center"><small>Copyright © YASHIMA & Co., LTD. All Rights Reserved.</small></div>
         </div>
@@ -701,12 +326,11 @@
     </div>
 </footer>
     
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://dev-yashima.4sis.site/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://yashima-express.com/js/app.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="https://dev-yashima.4sis.site/js/scripts.js"></script> -->
+    <script type="module" src="https://yashima-express.com/js/scripts.js"></script>
 
     
-    
-</body>
+    </body>
 </html>
