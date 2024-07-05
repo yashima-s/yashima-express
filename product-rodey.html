@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">
+
+    <title>ヤシマエクスプレス　Roadie（ローディー）</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link href="https://yashima-express.com/css/normalize.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/app.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+
+    <link rel="stylesheet" href="https://yashima-express.com/css/fix.css">
+
+    <style>
+        .p-header__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p-header__nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body class="p-top">
+    <!-- Google tag (gtag.js) -->
+    <main id="content">
+        <header class="p-header">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-3 col-xl-2">
+                        <h1>
+                            <a href=""><img
+                                    src="https://yashima-express.com/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
+                        </h1>
+                    </div>
+
+                    <div class="col-9 col-xl-6 p-header__search">
+                        <form method="GET" action="https://yashima-express.com/search?large_category_id=">
+                            <div class="input-group">
+                                <button class="btn btn-secondary" type="submit"><i class="bi bi-search"></i></button>
+                                <input type="text" name="search_word" id="search_word" class="form-control " value=""
+                                    placeholder="キーワード／タグ検索">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-xl-4 p-header__info">
+                        <div class="row align-items-center text-right">
+                            <div class="col-12 col-lg-4 ml-auto col-xl-9">
+                                <div class="p-header__user_name">
+                                    (株)ヤシマキザイ　／　テスト様専用ページ
+                                </div>
+                            </div>
+                            <div class="d-none d-xl-block col-xl-3 ">
+                                <a href="" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                                    <img src="https://yashima-express.com/img/icons/logout.svg" alt="ログアウト">
+                                </a>
+                                <form id="logout-form" action="" method="POST"
+                                    style="display: none;">
+                                    <input type="hidden" name="_token" value="i1aR3WVt5hxi95eC8vLtwDgcyf0ga5EmANMdahd3">
+                                </form>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-12 p-header__menu">
+                                <a href="" class="btn btn-primary btn-sm"><i
+                                        class="bi bi-suit-heart-fill"></i>お気に入りリスト</a>
+                                <a href="" class="btn btn-primary btn-sm mr-2"><i
+                                        class="bi bi-clipboard-check-fill"></i>お見積りリスト</a>
+                                <a href=""><i class="bi bi-person-circle"></i></a>
+                                <span class="dropdown">
+                                    <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLinks"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                            class="bi bi-list"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinks">
+                                        <li><a class="dropdown-item"
+                                                href="">アカウント</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="">パスワード変更</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="">お気に入り一覧</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="">見積りリスト</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="">総合問い合わせ</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://yashima-express.com/teams_service">ご利用規約</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://yashima-express.com/files/help.pdf">サイト利用方法</a></li>
+                                        <li><a class="dropdown-item" target="_blank"
+                                                href="https://www.yashima-co.co.jp/ja/index.html">ヤシマキザイ</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="t" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                                ログアウト
+                                                <form id="logout-form" action=""
+                                                    method="POST" style="display: none;">
+                                                    <input type="hidden" name="_token"
+                                                        value="i1aR3WVt5hxi95eC8vLtwDgcyf0ga5EmANMdahd3">
+                                                </form>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <nav class="p-header__nav">
+                    <div class="p-header__nav__inner js-header_nav slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <div class="slick-track"
+                                style="opacity: 1; width: 768px; transform: translate3d(0px, 0px, 0px);">
+                                <div class="slick-slide slick-current slick-active" data-slick-index="0"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link" href=""
+                                            tabindex="0">
+                                            <img src="https://yashima-express.com/img/icons/nav/1.svg" alt="PICK UP">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false"
+                                    style="width: 96px;" tabindex="0">
+                                    <div class="nav-item dropdown">
+                                        <a class="nav-link" href="" tabindex="0">
+                                            <img src="https://yashima-express.com/img/icons/nav/2.svg" alt="セール商品">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="2"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/3.svg" alt="道路・設備保全">
+                                    </a>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="3"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/4.svg" alt="安全対策">
+                                    </a>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="4"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/5.svg" alt="環境対策">
+                                    </a>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="5"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/6.svg" alt="副資材">
+                                    </a>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="6"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/7.svg" alt="デジタルソリューション">
+                                    </a>
+                                </div>
+                                <div class="nav-item dropdown slick-slide slick-active" data-slick-index="7"
+                                    aria-hidden="false" style="width: 96px;" tabindex="0">
+                                    <a class="nav-link" href="" tabindex="0">
+                                        <img src="https://yashima-express.com/img/icons/nav/8.svg" alt="その他">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+                <div class="p-header__nav p-header__nav--sub"></div>
+
+            </div>
+        </header>
+        <div class="container my-2">
+            <nav class="c-breadcrumb">
+                <ol>
+                    <li><a href="">トップ</a></li>
+                    <li class="active" aria-current="page">
+                        <a href="">
+                            その他
+                        </a>
+                    </li>
+                    <li class="active" aria-current="page"><a
+                            href="">Roadie（ローディー）</a></li>
+                </ol>
+            </nav>
+
+            <div class="container my-2">
+                <div class="row justify-content-between mb-3">
+                    <div class="col-12 col-md-6">
+                        <h2>
+                            Roadie（ローディー）
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-6 text-right">
+                        <button type="button" class="favorite" id="favorite458" data-favorite_id="458"><i
+                                class="bi bi-suit-heart-fill" data-toggle="tooltip" title="お気に入り登録リストに追加"></i></button>
+                        <button type="button" class="estimate" data-estimate_id="458"><i
+                                class="bi bi-clipboard-check-fill" data-toggle="tooltip"
+                                title="見積り依頼リストに追加"></i></button>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5 mb-3">
+                        <div class="p-product-single__image">
+                            <div class="dddd main js-product_images slick-initialized slick-slider"><button
+                                    class="slick-prev slick-arrow" aria-label="Previous" type="button"
+                                    >Previous</button>
+                                <div class="slick-list draggable">
+                                    <div class="slick-track"
+                                        style="opacity: 1; width: 2597px; transform: translate3d(-742px, 0px, 0px);">
+                                        <div class="item slick-slide slick-cloned" data-slick-index="-1"
+                                            aria-hidden="true" style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                        <div class="item slick-slide" data-slick-index="0" aria-hidden="true"
+                                            style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/WRWetkWCFzpqZkYomMeh4dJyM8GMD5AVv2Ge95i3Ngr2hfJgOh.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-current slick-active" data-slick-index="1"
+                                            aria-hidden="false" style="width: 371px;" tabindex="0">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/dI6chXGUKm8Kp5ag6LAu68557otUK326YBrzgE3UPSsP167gsp.jpg">
+                                        </div>
+                                        <div class="item slick-slide" data-slick-index="2" aria-hidden="true"
+                                            style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="3"
+                                            aria-hidden="true" style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/WRWetkWCFzpqZkYomMeh4dJyM8GMD5AVv2Ge95i3Ngr2hfJgOh.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="4"
+                                            aria-hidden="true" style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/dI6chXGUKm8Kp5ag6LAu68557otUK326YBrzgE3UPSsP167gsp.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="5"
+                                            aria-hidden="true" style="width: 371px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="slick-next slick-arrow" aria-label="Next" type="button"style="">Next</button>
+                            </div>
+                            <div class="sub js-product_images__nav slick-initialized slick-slider"><button
+                                    class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button>
+                                <div class="slick-list draggable">
+                                    <div class="slick-track"
+                                        style="opacity: 1; width: 1736px; transform: translate3d(-651px, 0px, 0px);">
+                                        <div class="item slick-slide slick-cloned" data-slick-index="-2"
+                                            aria-hidden="true" style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/dI6chXGUKm8Kp5ag6LAu68557otUK326YBrzgE3UPSsP167gsp.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned is-active" data-slick-index="-1"
+                                            aria-hidden="true" style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                        <div class="item slick-slide" data-slick-index="0" aria-hidden="true"
+                                            style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/WRWetkWCFzpqZkYomMeh4dJyM8GMD5AVv2Ge95i3Ngr2hfJgOh.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-current slick-active" data-slick-index="1"
+                                            aria-hidden="false" style="width: 201px;" tabindex="0">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/dI6chXGUKm8Kp5ag6LAu68557otUK326YBrzgE3UPSsP167gsp.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-active" data-slick-index="2"
+                                            aria-hidden="false" style="width: 201px;" tabindex="0">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="3"
+                                            aria-hidden="true" style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/WRWetkWCFzpqZkYomMeh4dJyM8GMD5AVv2Ge95i3Ngr2hfJgOh.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="4"
+                                            aria-hidden="true" style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/dI6chXGUKm8Kp5ag6LAu68557otUK326YBrzgE3UPSsP167gsp.jpg">
+                                        </div>
+                                        <div class="item slick-slide slick-cloned" data-slick-index="5"
+                                            aria-hidden="true" style="width: 201px;" tabindex="-1">
+                                            <img
+                                                src="https://yashima-express.com/storage/itemimage/KbiARKXcgfFgmLdAmdQSPSzoPqRTFoE39Mw7lNxCkICVBbu86f.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <button class="slick-next slick-arrow" aria-label="Next" type="button">Next</button>
+                            </div>
+                        </div>
+                        <div class="main mt-3">
+                            <iframe width="420" height="180" src="https://www.youtube.com/embed/vmUTF_hsJzI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="mb-5">『Roadie V2』は、可搬式のためいつでもどこでも、付帯のCHAdeMOコネクターを介して簡単にEV充電ができるポータブルEV用急速充電器です。<br>
+                            <br>
+                            蓄電池ユニット自体の充電は一般のAC100V電源が使え、約4時間で満充電が可能。<br>
+                            蓄電池を3.35kWh単位でユニット化したことで、ニーズに合わせて増設が<br>
+                            できる他、一般車両/軽自動でも運送が可能なため、特定車両の必要がございません。<br>
+                            <br>
+                            【特長】<br>
+                            ■CHAdeMOユニット<br>
+                            　・最大出力20kW<br>
+                            ■蓄電池ユニット<br>
+                            　・蓄電池容量 3.35kWh/ユニット<br>
+                            　・&ZeroWidthSpace;一度に4台まで積み重ね可能<br>
+                            ■約80km～追加走行可能<br>
+                            　・蓄電池ユニット4台分
+                        </p>
+                        <div class="row row-cols-1 row-cols-md-2 mb-4">
+                            <div class="col mb-3">
+                                <div class="mb-3">
+                                    <p>メーカー名：ベルエナジー（株）</p>
+                                    <p>型式：Roadie V2</p>
+                                    <p>価格：都度見積もり</p>
+                                    <p>納期：都度見積もり</p>
+                                    <p>タグ：
+                                        <small>
+                                            <span class="m-0 mr-1 badge badge-primary">#EV</span>
+                                            <span class="m-0 mr-1 badge badge-primary">#EV急速充電器</span>
+                                            <span class="m-0 mr-1 badge badge-primary">#ポータブル</span>
+                                            <span class="m-0 mr-1 badge badge-primary">#充電器</span>
+                                            <span class="m-0 mr-1 badge badge-primary">#電気自動車</span>
+                                        </small>
+                                    </p>
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href=""
+                                class="btn btn-primary c-button--arrow"><i
+                                    class="bi bi-arrow-right-circle-fill"></i>商品へのお問い合わせはこちら（メールフォームへ）</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="bg-light py-4">
+        <div class="container">
+            <h4 class="c-title--secondary mb-4"><span>ご利用の流れ</span></h4>
+            <div class="c-segment--small p-home__flow row row-cols-4 mb-4">
+                <div class="col"><img src="https://yashima-express.com/img/home/flow_1.svg" alt="商品検索"></div>
+                <div class="col"><img src="https://yashima-express.com/img/home/flow_3.svg" alt="お問合せ"></div>
+                <div class="col"><img src="https://yashima-express.com/img/home/flow_2.svg" alt="お見積り"></div>
+                <div class="col"><img src="https://yashima-express.com/img/home/flow_4.svg" alt="対応・納品"></div>
+            </div>
+            <div class="text-center">
+                <a target="_blank" href="https://yashima-express.com/files/help.pdf"
+                    class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>詳しくはこちら</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pt-5 pb-2 bg-primary text-white">
+        <div class="container">
+            <div class="c-segment--small">
+                <div class="p-footer__logo text-center mb-4">
+                    <a href="#"><img src="https://yashima-express.com/img/common/logo_white.svg" alt="ヤシマエクスプレス"></a>
+                </div>
+                <p class="mb-4">
+                    ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。
+                </p>
+                <div class="row row-cols-4 text-center mb-4">
+                    <a target="_blank" href="https://yashima-express.com/teams_service"
+                        class="col text-white"><small>ご利用規約</small></a>
+                    <a target="_blank" href="https://yashima-express.com/files/help.pdf"
+                        class="col text-white"><small>サイト利用方法について</small></a>
+                    <a href="" class="col text-white"><small>総合問い合せはこちら</small></a>
+                    <a target="_blank" href="https://www.yashima-co.co.jp/ja/index.html"
+                        class="col text-white"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a>
+                </div>
+                <div class="text-center mb-5">
+                    <a href="#" class="js-to_top"><img src="https://yashima-express.com/img/icons/to_top.svg"
+                            alt="PAGE TOP"></a>
+                </div>
+                <div class="text-center"><small>Copyright © YASHIMA & Co., LTD. All Rights Reserved.</small></div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://yashima-express.com/js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="module" src="https://yashima-express.com/js/scripts.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            if ($('.js-product_images__nav').length) {
+                $('.js-product_images__nav').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    arrows: true, // 矢印を表示
+                    dots: false // ドットナビゲーションを表示
+                });
+            } else {
+                console.log("Slick slider target element is missing.");
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
